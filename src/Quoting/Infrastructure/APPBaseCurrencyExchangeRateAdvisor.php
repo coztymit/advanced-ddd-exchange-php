@@ -8,7 +8,7 @@ use App\Quoting\Domain\ExchangeRateAdvisor;
 use App\Quoting\Domain\Rate;
 
 
-class RestBaseCurrencyExchangeRateAdvisor implements ExchangeRateAdvisor
+class APPBaseCurrencyExchangeRateAdvisor implements ExchangeRateAdvisor
 {
     private CurrencyPairApplicationService $currencyPairApplicationService;
 
