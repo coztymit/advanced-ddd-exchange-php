@@ -21,7 +21,7 @@ class Email
 
     public function equals(Email $email): bool
     {
-        return $this->value === $email->getValue();
+        return $this->value === $email->value;
     }
 
     private function isValid(string $value): bool
