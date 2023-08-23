@@ -116,11 +116,13 @@ class Account {
         if (!$toWallet) {
             $toWallet = new Wallet($this, $currencyToBuy);
             $this->wallets->add($toWallet);
+        }else{
+            $toWallet->addFunds($currencyToBuy);
         }
 
         $fromWallet->withdrawFunds($currencyToSell);
-        $toWallet->addFunds($currencyToBuy);
-        //$this->transactions[] = new Transaction($transactionType, $currencyToBuy);
+
+       // $this->transactions[] = new Transaction($transactionType, $currencyToBuy);
     }
 
 
